@@ -17,7 +17,7 @@ class EasyNixie{
     uint8_t dsin;
     public:
     EasyNixie(uint8_t outputEnable,uint8_t shcp, uint8_t stcp, uint8_t dsin);
-    void SetNixie(uint8_t number,uint8_t color,bool voltage=true);
+    void SetNixie(uint8_t number,uint8_t color,bool voltage=true,bool comma = false);
     void Latch(void);
 };
 
