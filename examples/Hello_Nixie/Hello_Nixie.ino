@@ -1,5 +1,3 @@
-#include "/home/alex/Documents/personalProjects/boards/EasyNixie-master/EasyNixie.cpp"    //Nixie library
-
 #define OUT_EN 3   //connect Pin ArduinoUNO 3 to OUT_EN
 #define SHCP   2   //connect Pin ArduinoUNO 2 to SHCP
 #define STCP   6   //connect Pin ArduinoUNO 6 to STCP
