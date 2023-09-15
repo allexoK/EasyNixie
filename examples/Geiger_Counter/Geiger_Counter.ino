@@ -1,8 +1,8 @@
 #define OUT_EN          3   //connect Pin ArduinoUNO 3 to OUT_EN
-#define SHCP            4   //connect Pin ArduinoUNO 2 to SHCP
+#define SHCP            4   //connect Pin ArduinoUNO 4 to SHCP
 #define STCP            6   //connect Pin ArduinoUNO 6 to STCP
 #define DSIN            7   //connect Pin ArduinoUNO 7 to DSIN
-
+// Connect Geiger output to pin 2
 
 EasyNixie en(OUT_EN,SHCP, STCP, DSIN); //Initialisation 'en' protocole
 uint16_t pulses=0;
