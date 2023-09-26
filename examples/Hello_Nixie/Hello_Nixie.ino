@@ -14,12 +14,12 @@ void loop()                          //Writing 0-9 number Value
 {
   for (uint8_t i = 0; i <= 9; i++)      
   {                                  
-    en.SetNixie(i,5,true,true,100);           //en.SetNixie(NixieNubmer , Color , ON/Off_Nixie);   Set color= 5= Purple
+    en.SetNixie(i,5,true,true,0);    //en.SetNixie(NixieNubmer , Color , ON/Off_Nixie);   Set color= 5= Purple; dimming=0 - max brightness
     en.Latch();                      //Send your set to EaseNixie 
 
     Serial.print("'i' is equal: ");  //Print to COM actual Value
     Serial.println(i);
-    delay(1000);                     //Wait 1,4sec  
+    delay(600000);                     //Wait 1,4sec  
   }  
   
 }
