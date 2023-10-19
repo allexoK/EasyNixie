@@ -77,9 +77,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5c4b88540db0ac99c6b47bd90d384bfb"><td class="memItemLeft" align="right" valign="top"><a id="a5c4b88540db0ac99c6b47bd90d384bfb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEasyNixie.html#a5c4b88540db0ac99c6b47bd90d384bfb">EasyNixie</a> (uint8_t <a class="el" href="classEasyNixie.html#ab449bef9d76027b3582973a3c68c48b7">outputEnable</a>, uint8_t <a class="el" href="classEasyNixie.html#abaadfe7644f3f9e3916d7c757af27b70">shcp</a>, uint8_t <a class="el" href="classEasyNixie.html#a5a54a63ef1b1ea04f7156c0b904a6637">stcp</a>, uint8_t <a class="el" href="classEasyNixie.html#a1d0d6a85ff349366e47d477c15d4249d">dsin</a>)</td></tr>
-<tr class="memdesc:a5c4b88540db0ac99c6b47bd90d384bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Constructor takes 4 pin names as inputs, they are labeled OUT_EN, SHCP, STCP and DSIN on your <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a> module. <br /></td></tr>
+<tr class="memitem:a5c4b88540db0ac99c6b47bd90d384bfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEasyNixie.html#a5c4b88540db0ac99c6b47bd90d384bfb">EasyNixie</a> (uint8_t <a class="el" href="classEasyNixie.html#ab449bef9d76027b3582973a3c68c48b7">outputEnable</a>, uint8_t <a class="el" href="classEasyNixie.html#abaadfe7644f3f9e3916d7c757af27b70">shcp</a>, uint8_t <a class="el" href="classEasyNixie.html#a5a54a63ef1b1ea04f7156c0b904a6637">stcp</a>, uint8_t <a class="el" href="classEasyNixie.html#a1d0d6a85ff349366e47d477c15d4249d">dsin</a>)</td></tr>
+<tr class="memdesc:a5c4b88540db0ac99c6b47bd90d384bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This constructor takes 4 pin names as arguments, they are labeled OUT_EN, SHCP, STCP and DSIN on your <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a> module.  <a href="classEasyNixie.html#a5c4b88540db0ac99c6b47bd90d384bfb">More...</a><br /></td></tr>
 <tr class="separator:a5c4b88540db0ac99c6b47bd90d384bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8e0814e856452d21e7e0985aad7b448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEasyNixie.html#ab8e0814e856452d21e7e0985aad7b448">SetNixie</a> (uint8_t number, uint8_t color, bool voltage=true, bool comma=false, uint16_t dimming=0)</td></tr>
 <tr class="memdesc:ab8e0814e856452d21e7e0985aad7b448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set nixie digit/symbol on your <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a>. If you have multiple modules connected 'in series' (EasyNixie1 DSOUT-&gt;EasyNixie2 DSIN) the value is set to the first module in series(The one which has DSIN connected to the Arduino). To display the value set with this method use the <a class="el" href="classEasyNixie.html#a0a5f0af70b6672dd862c73ac5ab19397">Latch</a> method!  <a href="classEasyNixie.html#ab8e0814e856452d21e7e0985aad7b448">More...</a><br /></td></tr>
@@ -110,7 +109,59 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a> class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5c4b88540db0ac99c6b47bd90d384bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4b88540db0ac99c6b47bd90d384bfb">&#9670;&nbsp;</a></span>EasyNixie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EasyNixie::EasyNixie </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>outputEnable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>shcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>stcp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>dsin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This constructor takes 4 pin names as arguments, they are labeled OUT_EN, SHCP, STCP and DSIN on your <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a> module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">outputEnable</td><td>The microcontroller pin connected to OUT_EN pin of the <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a> </td></tr>
+    <tr><td class="paramname">shcp</td><td>The microcontroller pin connected to SHCP pin of the <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a>. </td></tr>
+    <tr><td class="paramname">stcp</td><td>The microcontroller pin connected to STCP pin of the <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a>. </td></tr>
+    <tr><td class="paramname">dsin</td><td>The microcontroller pin connected to DSIN pin of the <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab8e0814e856452d21e7e0985aad7b448"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8e0814e856452d21e7e0985aad7b448">&#9670;&nbsp;</a></span>SetNixie()</h2>
 
@@ -159,7 +210,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">number</td><td>The digit/symbol you want to display. The digits can be swapped if you are using non-standard nixies(not In-12/In-17). </td></tr>
-    <tr><td class="paramname">color</td><td>Led color, checkout the <a class="el" href="group__Colors.html">Avalilable led colors</a>, I should have probably used enum to avoid illegal arguments, but I am too lasy to rewrite and retest all the examples... </td></tr>
+    <tr><td class="paramname">color</td><td>Led color, checkout the <a class="el" href="group__Colors.html">Avalilable led colors</a>, I should have probably used enum to avoid illegal arguments, but I am too lazy to rewrite and retest all the examples... </td></tr>
     <tr><td class="paramname">voltage</td><td>This argument enables the high-voltage convertor, be sure to disconnect the <a class="el" href="classEasyNixie.html" title="The main EasyNixie class.">EasyNixie</a> from PC, when you are calling the function with this argument set to true. You can flash the code with VPOWER pin disconneted, then disconnect the board from PC, connect to some external power source, then connect the VPOWER pin. </td></tr>
     <tr><td class="paramname">comma</td><td>Or the 'decimal point'. This argument controls the decimal point of In-12B. </td></tr>
     <tr><td class="paramname">dimming</td><td>Basically, just PWM on the <a class="el" href="classEasyNixie.html#ab449bef9d76027b3582973a3c68c48b7">outputEnable</a> pin. 0 means max brightness, 255 means min brightness. </td></tr>

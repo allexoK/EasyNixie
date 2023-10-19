@@ -33,7 +33,12 @@ class EasyNixie{
     /** @brief The microcontroller pin connected to DSIN pin of the EasyNixie**/
     uint8_t dsin;
 
-    /** @brief This Constructor takes 4 pin names as inputs, they are labeled OUT_EN, SHCP, STCP and DSIN on your EasyNixie module **/
+    /** @brief This constructor takes 4 pin names as arguments, they are labeled OUT_EN, SHCP, STCP and DSIN on your EasyNixie module
+     * @param outputEnable The microcontroller pin connected to OUT_EN pin of the EasyNixie
+     * @param shcp The microcontroller pin connected to SHCP pin of the EasyNixie.
+     * @param stcp The microcontroller pin connected to STCP pin of the EasyNixie.
+     * @param dsin The microcontroller pin connected to DSIN pin of the EasyNixie.
+      **/
     EasyNixie(uint8_t outputEnable,uint8_t shcp, uint8_t stcp, uint8_t dsin);
 
     /** @brief Set nixie digit/symbol on your EasyNixie. If you have multiple modules connected 'in series' (EasyNixie1 DSOUT->EasyNixie2 DSIN)
@@ -41,7 +46,7 @@ class EasyNixie{
     * To display the value set with this method use the @ref Latch method!
     * @param number The digit/symbol you want to display. The digits can be swapped if you are using non-standard nixies(not In-12/In-17).
     * @param color Led color, checkout the \ref Colors, I should have probably used enum to avoid illegal arguments, 
-    * but I am too lasy to rewrite and retest all the examples...
+    * but I am too lazy to rewrite and retest all the examples...
     * @param voltage This argument enables the high-voltage convertor, be sure to disconnect the EasyNixie from PC,
     *  when you are calling the function with this argument set to true. You can flash the code with VPOWER pin disconneted,
     *  then disconnect the board from PC, connect to some external power source, then connect the VPOWER pin.
