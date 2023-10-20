@@ -1,0 +1,24 @@
+var NAVTREEINDEX0 =
+{
+"EasyNixie_8h_source.html":[4,0,0],
+"annotated.html":[3,0],
+"classEasyNixie.html":[3,0,0],
+"classEasyNixie.html#a0a5f0af70b6672dd862c73ac5ab19397":[3,0,0,1],
+"classEasyNixie.html#a1d0d6a85ff349366e47d477c15d4249d":[3,0,0,3],
+"classEasyNixie.html#a5a54a63ef1b1ea04f7156c0b904a6637":[3,0,0,6],
+"classEasyNixie.html#a5c4b88540db0ac99c6b47bd90d384bfb":[3,0,0,0],
+"classEasyNixie.html#ab449bef9d76027b3582973a3c68c48b7":[3,0,0,4],
+"classEasyNixie.html#ab8e0814e856452d21e7e0985aad7b448":[3,0,0,2],
+"classEasyNixie.html#abaadfe7644f3f9e3916d7c757af27b70":[3,0,0,5],
+"classes.html":[3,1],
+"files.html":[4,0],
+"functions.html":[3,2,0],
+"functions_func.html":[3,2,1],
+"functions_vars.html":[3,2,2],
+"group__Colors.html":[2,0],
+"index.html":[0],
+"index.html":[],
+"md_README.html":[1],
+"modules.html":[2],
+"pages.html":[]
+};
