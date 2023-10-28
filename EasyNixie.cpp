@@ -13,7 +13,7 @@ EasyNixie::EasyNixie(uint8_t outputEnable,uint8_t shcp, uint8_t stcp, uint8_t ds
 }
 
 void EasyNixie::SetNixie(uint8_t number,uint8_t color,bool voltage,bool comma,uint16_t dimming){
-    #if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)//AnalogWrite is supported for some platfroms and not supported for others(Esp32?), so if you want to used dimming in this platoforms you can implement it ourself
+    #if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168__)//AnalogWrite is supported for some platfroms and not supported for others(Esp32?), so if you want to used dimming on this platoforms you have to implement it yourself:)
     analogWrite(outputEnable,dimming);
     #endif
     uint8_t secondShiftRegisterData=0b00011100;
