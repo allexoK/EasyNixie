@@ -1,3 +1,5 @@
+#include "EasyNixie.h"
+
 #define OUT_EN          3   //connect Pin ArduinoUNO 3 to OUT_EN
 #define SHCP            4   //connect Pin ArduinoUNO 4 to SHCP
 #define STCP            6   //connect Pin ArduinoUNO 6 to STCP
