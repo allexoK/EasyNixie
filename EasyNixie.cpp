@@ -28,12 +28,25 @@ void EasyNixie::SetNixie(uint8_t number,uint8_t color,bool voltage,bool comma,ui
     if(color==EASY_NIXIE_BuG)secondShiftRegisterData&=0b11110011;	
     if(voltage)secondShiftRegisterData|=0b00100000;
     if(comma)secondShiftRegisterData|=0b01000000;
-    shiftOut(dsin, shcp, MSBFIRST, secondShiftRegisterData);
-    if(number<8)shiftOut(dsin, shcp, MSBFIRST, (uint8_t)(1<<number));
-    else shiftOut(dsin, shcp, MSBFIRST, 0);
+    slowShiftOut(dsin, shcp, MSBFIRST, secondShiftRegisterData);
+    if(number<8)slowShiftOut(dsin, shcp, MSBFIRST, (uint8_t)(1<<number));
+    else slowShiftOut(dsin, shcp, MSBFIRST, 0);
 
 }
 
+void EasyNixie::slowShiftOut(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint8_t val) {
+    for (uint8_t i = 0; i < 8; i++) {
+        if (bitOrder == LSBFIRST) {
+            digitalWrite(dataPin, (val & (1 << i)) ? HIGH : LOW);
+        } else {
+            digitalWrite(dataPin, (val & (1 << (7 - i))) ? HIGH : LOW);
+        }
+        digitalWrite(clockPin, HIGH);
+        delayMicroseconds(1);  // Short delay for timing
+        digitalWrite(clockPin, LOW);
+        delayMicroseconds(1);  // Short delay for timing
+    }
+}
 
 void EasyNixie::Latch(void){
     digitalWrite(stcp, LOW);
